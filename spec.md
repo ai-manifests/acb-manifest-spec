@@ -462,6 +462,16 @@ The shares sum so that the four bonus pools collectively account for 100% of
 the epistemic pool, with the dissent-quality penalty acting as a redistribution
 within the pool rather than an additional draw.
 
+**Empty-bonus-pool rule.** When a bonus pool has no eligible recipients — no
+agent acknowledged any falsification, no agent was load-bearing, no
+`outcome_observed` entry exists at settlement time — the pool MUST distribute
+equally across all participants instead of being lost. Without this rule the
+draw arithmetic does not close (substrate + epistemic distributions sum to
+strictly less than `draw_total`) and the requester would be over-charged
+relative to what the protocol actually delivered. The cheap routine in
+particular almost always hits this case for the load-bearing and outcome
+pools, so the rule is load-bearing for cheap-routine settlement.
+
 This function is intentionally tunable. Any settlement profile that passes
 the conformance tests in `acb-validate` may declare itself ACB-compliant.
 
