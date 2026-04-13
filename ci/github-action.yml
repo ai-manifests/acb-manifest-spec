@@ -1,0 +1,36 @@
+# .github/workflows/validate-acb.yml
+# Copy this file into your journal repo to validate ACB entries on every push.
+
+name: Validate ACB Entries
+
+on:
+  push:
+    paths:
+      - '**/*.acb.json'
+      - '**/*.acb.jsonl'
+      - '**/budget-*.json'
+      - '**/settlement-*.json'
+  pull_request:
+    paths:
+      - '**/*.acb.json'
+      - '**/*.acb.jsonl'
+      - '**/budget-*.json'
+      - '**/settlement-*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install acb-validate
+        run: npm install -g acb-validate
+
+      - name: Validate ACB entries against schema
+        run: |
+          find . \( -name '*.acb.json' -o -name 'budget-*.json' -o -name 'settlement-*.json' \) \
+            -exec acb-validate {} \;

@@ -1,0 +1,66 @@
+{
+  "entry_id": "adj_01HMZQ7K",
+  "entry_type": "settlement_recorded",
+  "deliberation_id": "dlb_01HMXJ3E9R",
+  "timestamp": "2026-04-14T09:30:00.000Z",
+  "prior_entry_hash": "sha256:p9q0r1s2t3u4v5w6x7y8z9a0b1c2d3e4f5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0",
+  "budget_id": "bgt_01HMXJ3E9R",
+  "settlement_profile": "default-v0",
+  "outcome_referenced": "adj_01HMZP2D",
+  "draw_total": 180,
+  "amount_total": 12000,
+  "amount_returned_to_requester": 11820,
+  "substrate_distributions": [
+    {
+      "recipient": "did:substrate:acme-cluster-eu",
+      "amount": 24,
+      "basis": "cycles",
+      "report_ref": "substrate:acme-cluster-eu/report/8821443"
+    },
+    {
+      "recipient": "did:substrate:openai-azure",
+      "amount": 12,
+      "basis": "cycles",
+      "report_ref": "substrate:openai/usage/run-9912"
+    }
+  ],
+  "epistemic_distributions": [
+    {
+      "recipient": "did:adp:test-runner-v2",
+      "amount": 86,
+      "contribution_breakdown": {
+        "base_share": 12,
+        "falsification_bonus": 24,
+        "load_bearing_bonus": 36,
+        "outcome_correctness_bonus": 14,
+        "dissent_quality_penalty": 0
+      }
+    },
+    {
+      "recipient": "did:adp:security-scanner-v3",
+      "amount": 36,
+      "contribution_breakdown": {
+        "base_share": 12,
+        "falsification_bonus": 12,
+        "load_bearing_bonus": 0,
+        "outcome_correctness_bonus": 12,
+        "dissent_quality_penalty": 0
+      }
+    },
+    {
+      "recipient": "did:adp:style-linter-v1",
+      "amount": 22,
+      "contribution_breakdown": {
+        "base_share": 12,
+        "falsification_bonus": 0,
+        "load_bearing_bonus": 0,
+        "outcome_correctness_bonus": 10,
+        "dissent_quality_penalty": 0
+      }
+    }
+  ],
+  "habit_discount_applied": 0.80,
+  "unlock_triggered": true,
+  "disagreement_magnitude_initial": 0.948,
+  "signature": "ed25519:7a4b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b"
+}
