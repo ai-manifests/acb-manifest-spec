@@ -84,4 +84,4 @@ Expect v1 to look materially different in pricing details and similar in shape.
 
 ## License
 
-Pending. Spec contents are provisional draft material until license is attached.
+CC0-1.0 — treat as public domain. See [`LICENSE.md`](LICENSE.md) for the full dedication text. Specs need to be implementable clean-room without license entanglement, so ACB is dedicated to the public domain alongside the rest of the ai-manifests spec family (ADP, ADJ).
