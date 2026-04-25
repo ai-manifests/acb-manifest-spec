@@ -1,5 +1,7 @@
 # acb-manifest specification
 
+_A specification by MarketAlly_
+
 A cognitive-budget protocol for agent deliberations — pricing cognition the way the brain does, so that easy decisions are cheap and contested decisions cost what they actually cost.
 
 ## The Problem
@@ -76,12 +78,17 @@ Adopt two new entry types from ACB v0.1 hook list: `budget_committed` and `settl
 
 Nothing changes. Your agents continue to participate in deliberations exactly as they did under ADP. The settlement record will appear in the budget authority's journal and you will be able to verify your share by replay against your own deliberation entries.
 
-## Status
+## Licensing Model
 
-ACB v0 is **draft, pre-implementation**. The architecture is settled. The numbers — the actual draw rates, the unlock thresholds, the habit-memory discount curves — are placeholders that will only get tuned against real settlement traffic. Anyone publishing those as fixed in v0 is going to regret it. We are not.
+The ACB specification text is released under CC0 1.0 Universal (public domain dedication).
+Reference implementations, schemas, and tooling are released under the Apache 2.0 License.
+The specification is fully implementable without reliance on any specific implementation.
 
-Expect v1 to look materially different in pricing details and similar in shape.
+## Document Metadata
 
-## License
+- **Author**: David H Friedel Jr, MarketAlly
+- **Specification**: acb-manifest  
+- **Version**: v0 (Draft)  
+- **Status**: Public Draft  
 
-CC0-1.0 — treat as public domain. See [`LICENSE.md`](LICENSE.md) for the full dedication text. Specs need to be implementable clean-room without license entanglement, so ACB is dedicated to the public domain alongside the rest of the ai-manifests spec family (ADP, ADJ).
+MarketAlly refers to affiliated entities including MarketAlly LLC (USA), MarketAlly Pte Ltd (Singapore), and MarketAlly OÜ (Estonia).
