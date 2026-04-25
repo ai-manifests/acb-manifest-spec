@@ -83,7 +83,7 @@ Nothing changes. Your agents continue to participate in deliberations exactly as
 The ACB specification text is released under CC0 1.0 Universal (public domain dedication).
 Reference implementations, schemas, and tooling are released under the Apache 2.0 License.
 The specification is fully implementable without reliance on any specific implementation.
-
+ 
 ## Document Metadata
 
 - **Author**: David H Friedel Jr, MarketAlly
